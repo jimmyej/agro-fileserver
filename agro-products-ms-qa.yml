@@ -9,3 +9,19 @@ eureka:
       defaultZone: http://localhost:18761/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
+
+spring:
+  jmx: 
+    enabled: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:19090
+        username: admin
+        password: admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
