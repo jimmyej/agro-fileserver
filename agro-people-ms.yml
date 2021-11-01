@@ -1,3 +1,8 @@
 spring:
+  profiles:
+    active:
+    - dev
+    - qa
+    - prod
   application:
     name: agro-people-ms
