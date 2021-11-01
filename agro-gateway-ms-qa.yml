@@ -10,6 +10,14 @@ spring:
         uri: lb://agro-people-ms
         predicates:
         - Path=/api/v1/people/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:18761/eureka}
+  instance:
+    preferIpAddress: true
+
 management:
   endpoints:
     web:
