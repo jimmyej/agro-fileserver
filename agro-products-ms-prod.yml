@@ -1,16 +1,11 @@
-spring:
-  cloud:
-    config:
-      uri: http://localhost:8888
-
 server:
-  port: 8761
-
+  port: 28010
+  
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:28761/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0

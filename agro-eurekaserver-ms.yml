@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: agro-eurekaserver-ms
-  profies: 
-    active: dev
