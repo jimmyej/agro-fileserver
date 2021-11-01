@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:18888
+
+server:
+  port: 18761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:18761/eureka
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
