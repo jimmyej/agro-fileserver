@@ -5,4 +5,4 @@ spring:
     - qa
     - prod
   application:
-    name: agro-products-ms
+    name: agro-gateway-ms

@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: agro-products-ms
+        uri: lb://agro-products-ms
+        predicates:
+        - Path=/api/v1/products/
+      - id: agro-people-ms
+        uri: lb://agro-people-ms
+        predicates:
+        - Path=/api/v1/people/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
